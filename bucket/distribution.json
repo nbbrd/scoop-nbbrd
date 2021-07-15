@@ -1,0 +1,26 @@
+{
+  "homepage": "https://github.com/nbbrd/sandbox",
+  "description": "Sandbox - CLI",
+  "version": "1.17.1",
+  "license": "European Union Public Licence (EUPL)",
+  "url": "https://github.com/nbbrd/sandbox/releases/download/v1.17.1/hello-1.17.1-bin.jar",
+  "hash": "sha256:9ecd829cac5c87d39547f1c9c1d34d1cc619f8898c751ebf3bf5495ed4054dc2",
+  "suggest": {
+    "JDK": [
+      "java/oraclejdk",
+      "java/openjdk"
+    ]
+  },
+  "pre_install": "\"@java -jar \"\"$dir\\hello-1.17.1-bin.jar\"\" %*\" | out-file -en oem \"$dir\\distribution.cmd\"",
+  "bin": "distribution.cmd",
+  "checkver": {
+    "url": "https://github.com/nbbrd/sandbox/releases/latest",
+    "re": "v([\\d.]+).jar"
+  },
+  "autoupdate": {
+    "url": "https://github.com/nbbrd/sandbox/releases/download/v$version/hello-$version-bin.jar",
+    "hash": {
+      "url": "$url.sha256"
+    }
+  }
+}
