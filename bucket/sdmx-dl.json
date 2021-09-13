@@ -1,0 +1,26 @@
+{
+  "homepage": "https://github.com/nbbrd/sdmx-dl",
+  "description": "Download data from remote SDMX servers - CLI",
+  "version": "3.0.0-beta.3",
+  "license": "European Union Public Licence (EUPL)",
+  "url": "https://github.com/nbbrd/sdmx-dl/releases/download/v3.0.0-beta.3/sdmx-dl-3.0.0-beta.3-bin.jar",
+  "hash": "sha256:e3b0a36ea62b72312ef560ebc8011b692c354b8d31f8873ba28584958ba30901",
+  "suggest": {
+    "JDK": [
+      "java/oraclejdk",
+      "java/openjdk"
+    ]
+  },
+  "pre_install": "\"@java -jar \"\"$dir\\sdmx-dl-3.0.0-beta.3-bin.jar\"\" %*\" | out-file -en oem \"$dir\\sdmx-dl.cmd\"",
+  "bin": "sdmx-dl.cmd",
+  "checkver": {
+    "url": "https://github.com/nbbrd/sdmx-dl/releases/latest",
+    "re": "v([\\d.]+).jar"
+  },
+  "autoupdate": {
+    "url": "https://github.com/nbbrd/sdmx-dl/releases/download/v$version/sdmx-dl-$version-bin.jar",
+    "hash": {
+      "url": "$url.sha256"
+    }
+  }
+}
