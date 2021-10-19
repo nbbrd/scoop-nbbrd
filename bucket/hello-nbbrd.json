@@ -1,17 +1,17 @@
 {
   "homepage": "https://github.com/nbbrd/sandbox",
   "description": "Sandbox - Binaries",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "license": "European Union Public Licence (EUPL)",
-  "url": "https://github.com/nbbrd/sandbox/releases/download/v2.0.0/hello-nbbrd-2.0.0-bin.jar",
-  "hash": "sha256:ef92d051eb431d08309d48c916daf118df86cb998b619b87fec3767beeb09513",
+  "url": "https://github.com/nbbrd/sandbox/releases/download/v2.0.1/hello-nbbrd-2.0.1-bin.jar",
+  "hash": "sha256:437e5b881f4bea5fadaf6959988040152ebe5b6ace5fa4f2aa4247569d57a37f",
   "suggest": {
     "JDK": [
       "java/oraclejdk",
       "java/openjdk"
     ]
   },
-  "pre_install": "\"@java -jar \"\"$dir\\hello-nbbrd-2.0.0-bin.jar\"\" %*\" | out-file -en oem \"$dir\\hello-nbbrd.cmd\"",
+  "pre_install": "\"@java -jar \"\"$dir\\hello-nbbrd-2.0.1-bin.jar\"\" %*\" | out-file -en oem \"$dir\\hello-nbbrd.cmd\"",
   "bin": "hello-nbbrd.cmd",
   "checkver": {
     "url": "https://github.com/nbbrd/sandbox/releases/latest",
