@@ -1,17 +1,17 @@
 {
   "homepage": "https://github.com/nbbrd/sandbox",
-  "description": "Sandbox - CLI",
-  "version": "1.17.4",
+  "description": "Sandbox - Binaries",
+  "version": "2.0.0",
   "license": "European Union Public Licence (EUPL)",
-  "url": "https://github.com/nbbrd/sandbox/releases/download/v1.17.4/hello-nbbrd-1.17.4-bin.jar",
-  "hash": "sha256:a3b0567593328701a131801d470930a009a8e643beff94a584a0ec6abfa5ae48",
+  "url": "https://github.com/nbbrd/sandbox/releases/download/v2.0.0/hello-nbbrd-2.0.0-bin.jar",
+  "hash": "sha256:ef92d051eb431d08309d48c916daf118df86cb998b619b87fec3767beeb09513",
   "suggest": {
     "JDK": [
       "java/oraclejdk",
       "java/openjdk"
     ]
   },
-  "pre_install": "\"@java -jar \"\"$dir\\hello-nbbrd-1.17.4-bin.jar\"\" %*\" | out-file -en oem \"$dir\\hello-nbbrd.cmd\"",
+  "pre_install": "\"@java -jar \"\"$dir\\hello-nbbrd-2.0.0-bin.jar\"\" %*\" | out-file -en oem \"$dir\\hello-nbbrd.cmd\"",
   "bin": "hello-nbbrd.cmd",
   "checkver": {
     "url": "https://github.com/nbbrd/sandbox/releases/latest",
