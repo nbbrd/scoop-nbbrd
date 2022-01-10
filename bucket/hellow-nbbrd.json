@@ -1,18 +1,18 @@
 {
   "homepage": "https://github.com/nbbrd/sandbox",
   "description": "Sandbox - Binaries",
-  "version": "2.0.1",
+  "version": "2.0.5",
   "license": "European Union Public Licence (EUPL)",
-  "url": "https://github.com/nbbrd/sandbox/releases/download/v2.0.1/hellow-nbbrd-2.0.1-bin.jar",
-  "hash": "sha256:16dc2acec16ac9e2f1154979cf395e2bab9e39b7615489b0f19ea875d1a18045",
+  "url": "https://github.com/nbbrd/sandbox/releases/download/v2.0.5/hellow-nbbrd-2.0.5-bin.jar",
+  "hash": "sha256:55a91a157aa056dcbb5ecb7b7a88c50f93de4462052d5756992067008354e03e",
   "suggest": {
     "JDK": [
       "java/oraclejdk",
       "java/openjdk"
     ]
   },
-  "pre_install": "\"@java -jar \"\"$dir\\hellow-nbbrd-2.0.1-bin.jar\"\" %*\" | out-file -en oem \"$dir\\hellow-nbbrd.cmd\"",
-  "bin": "hellow-nbbrd.cmd",
+  "pre_install": "\"@java -jar \"\"$dir\\hellow-nbbrd-2.0.5-bin.jar\"\" %*\" | out-file -en oem \"$dir\\hellow-nbbrd.bat\"",
+  "bin": "hellow-nbbrd.bat",
   "checkver": {
     "url": "https://github.com/nbbrd/sandbox/releases/latest",
     "re": "v([\\d.]+).jar"
