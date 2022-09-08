@@ -1,0 +1,26 @@
+{
+  "homepage": "https://github.com/nbbrd/heylogs",
+  "description": "Keep-a-changelog tool - CLI",
+  "version": "0.1.0",
+  "license": "European Union Public Licence (EUPL)",
+  "url": "https://github.com/nbbrd/heylogs/releases/download/v0.1.0/heylogs-cli-0.1.0-bin.jar",
+  "hash": "sha256:6f0125cc5d5985736cc995b7a9093b01ccfd64f003a9ba12632d03ef701ac693",
+  "suggest": {
+    "JDK": [
+      "java/oraclejdk",
+      "java/openjdk"
+    ]
+  },
+  "pre_install": "\"@java -jar \"\"$dir\\heylogs-cli-0.1.0-bin.jar\"\" %*\" | out-file -en oem \"$dir\\heylogs.bat\"",
+  "bin": "heylogs.bat",
+  "checkver": {
+    "url": "https://github.com/nbbrd/heylogs/releases/latest",
+    "re": "v([\\d.]+).jar"
+  },
+  "autoupdate": {
+    "url": "https://github.com/nbbrd/heylogs/releases/download/v$version/heylogs-cli-$version-bin.jar",
+    "hash": {
+      "url": "$url.sha256"
+    }
+  }
+}
