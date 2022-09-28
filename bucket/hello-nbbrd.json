@@ -1,24 +1,24 @@
 {
   "homepage": "https://github.com/nbbrd/sandbox",
-  "description": "Sandbox - Binaries",
-  "version": "2.2.2",
+  "description": "Sandbox - Bill of Materials",
+  "version": "2.2.3",
   "license": "European Union Public Licence (EUPL)",
-  "url": "https://github.com/nbbrd/sandbox/releases/download/v2.2.2/hello-nbbrd-2.2.2-bin.jar",
-  "hash": "sha256:f88cdc57d3b7dda8f8804abf915487d28bbef9e0dd39a1dd1a9d24f75198d896",
+  "url": "https://github.com/nbbrd/sandbox/releases/download/v2.2.3/sandbox-cli-2.2.3-bin.jar",
+  "hash": "sha256:51bbb8dba395aeca27ae554c09ccbf5e13cf326a98a8c0fc9e3f65f3d3ff9a15",
   "suggest": {
     "JDK": [
       "java/oraclejdk",
       "java/openjdk"
     ]
   },
-  "pre_install": "\"@java -jar \"\"$dir\\hello-nbbrd-2.2.2-bin.jar\"\" %*\" | out-file -en oem \"$dir\\hello-nbbrd.bat\"",
+  "pre_install": "\"@java -jar \"\"$dir\\sandbox-cli-2.2.3-bin.jar\"\" %*\" | out-file -en oem \"$dir\\hello-nbbrd.bat\"",
   "bin": "hello-nbbrd.bat",
   "checkver": {
     "url": "https://github.com/nbbrd/sandbox/releases/latest",
     "re": "v([\\d.]+).jar"
   },
   "autoupdate": {
-    "url": "https://github.com/nbbrd/sandbox/releases/download/v$version/hello-nbbrd-$version-bin.jar",
+    "url": "https://github.com/nbbrd/sandbox/releases/download/v$version/sandbox-cli-$version-bin.jar",
     "hash": {
       "url": "$url.sha256"
     }
