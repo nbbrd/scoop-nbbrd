@@ -4,7 +4,7 @@
   "version": "2.2.7",
   "license": "European Union Public Licence (EUPL)",
   "url": "https://github.com/nbbrd/sandbox/releases/download/v2.2.7/sandbox-cli-2.2.7-bin.jar",
-  "hash": "sha256:09f788c6572a4c81562a45695c84cab174eadd70c633f7b953686280e07addaf",
+  "hash": "sha256:453c7a5995d2d0682d873cd0b5c68722a50b3ef578e75cbd92fdfbdb5ef2fcb0",
   "suggest": {
     "JDK": [
       "java/oraclejdk",
