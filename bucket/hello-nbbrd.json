@@ -1,17 +1,17 @@
 {
-  "version": "2.2.9",
+  "version": "2.2.10",
   "description": "Sandbox - Bill of Materials",
   "homepage": "https://github.com/nbbrd/sandbox",
   "license": "European Union Public Licence (EUPL)",
-  "url": "https://github.com/nbbrd/sandbox/releases/download/v2.2.9/sandbox-cli-2.2.9-bin.jar",
-  "hash": "sha256:1174beffcc1a01eb7c48556072fc84ba8ec71348adda160aa7dfa1a6840b8448",
+  "url": "https://github.com/nbbrd/sandbox/releases/download/v2.2.10/sandbox-cli-2.2.10-bin.jar",
+  "hash": "sha256:3eb617ab303bd0960f423e50db0e1da81654ae12c72926fdd06d252a8d2e2525",
   "suggest": {
     "JDK": [
       "java/oraclejdk",
       "java/openjdk"
     ]
   },
-  "pre_install": "\"@java -jar \"$dir\\sandbox-cli-2.2.9-bin.jar\" %*\" | out-file -en oem \"$dir\\hello-nbbrd.bat\"",
+  "pre_install": "\"@java -jar \"$dir\\sandbox-cli-2.2.10-bin.jar\" %*\" | out-file -en oem \"$dir\\hello-nbbrd.bat\"",
   "bin": "hello-nbbrd.bat",
   "checkver": {
     "url": "https://github.com/nbbrd/sandbox/releases/latest",
