@@ -1,17 +1,17 @@
 {
+  "version": "0.6.0",
+  "description": "Keep-a-changelog tool - Bill of Materials",
   "homepage": "https://github.com/nbbrd/heylogs",
-  "description": "Keep-a-changelog tool - CLI",
-  "version": "0.5.0",
   "license": "European Union Public Licence (EUPL)",
-  "url": "https://github.com/nbbrd/heylogs/releases/download/v0.5.0/heylogs-cli-0.5.0-bin.jar",
-  "hash": "sha256:d3bebd2f32859418ecf0351534c58255634d9a2745d13beec76417c8fae0f3f2",
+  "url": "https://github.com/nbbrd/heylogs/releases/download/v0.6.0/heylogs-cli-0.6.0-bin.jar",
+  "hash": "sha256:bf02fd45484d514c45167820bc77c3da62986bb1b22bafee27bfa47051158f32",
   "suggest": {
     "JDK": [
       "java/oraclejdk",
       "java/openjdk"
     ]
   },
-  "pre_install": "\"@java -jar \"\"$dir\\heylogs-cli-0.5.0-bin.jar\"\" %*\" | out-file -en oem \"$dir\\heylogs.bat\"",
+  "pre_install": "\"@java -jar \"$dir\\heylogs-cli-0.6.0-bin.jar\" %*\" | out-file -en oem \"$dir\\heylogs.bat\"",
   "bin": "heylogs.bat",
   "checkver": {
     "url": "https://github.com/nbbrd/heylogs/releases/latest",
