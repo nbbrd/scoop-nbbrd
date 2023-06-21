@@ -11,7 +11,7 @@
       "java/openjdk"
     ]
   },
-  "pre_install": "\"@java -jar \"$dir\\heylogs-cli-0.6.0-bin.jar\" %*\" | out-file -en oem \"$dir\\heylogs.bat\"",
+  "pre_install": "\"@java -jar \"\"$dir\\heylogs-cli-0.6.0-bin.jar\"\" %*\" | out-file -en oem \"$dir\\heylogs.bat\"",
   "bin": "heylogs.bat",
   "checkver": {
     "url": "https://github.com/nbbrd/heylogs/releases/latest",
