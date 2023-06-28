@@ -1,17 +1,17 @@
 {
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Sandbox - Bill of Materials",
   "homepage": "https://github.com/nbbrd/sandbox",
   "license": "European Union Public Licence (EUPL)",
-  "url": "https://github.com/nbbrd/sandbox/releases/download/v2.3.0/sandbox-desktop-2.3.0-bin.jar",
-  "hash": "sha256:cbaf618765ac11553befaf4aaeea9611d7f142dde6a7a81dabe17abec49d64c2",
+  "url": "https://github.com/nbbrd/sandbox/releases/download/v2.3.1/sandbox-desktop-2.3.1-bin.jar",
+  "hash": "sha256:e4297f7a49ff3ebba9c487c88e45b316c7ea51580f9c9664a52b19177be70ab3",
   "suggest": {
     "JDK": [
       "java/oraclejdk",
       "java/openjdk"
     ]
   },
-  "pre_install": "\"@java -jar \"\"$dir\\sandbox-desktop-2.3.0-bin.jar\"\" %*\" | out-file -en oem \"$dir\\hellow-nbbrd.bat\"",
+  "pre_install": "\"@java -jar \"\"$dir\\sandbox-desktop-2.3.1-bin.jar\"\" %*\" | out-file -en oem \"$dir\\hellow-nbbrd.bat\"",
   "bin": "hellow-nbbrd.bat",
   "checkver": {
     "url": "https://github.com/nbbrd/sandbox/releases/latest",
