@@ -1,17 +1,17 @@
 {
-  "version": "3.0.0-beta.11",
-  "description": "Download SDMX data - CLI",
+  "version": "3.0.0-beta.12",
+  "description": "Easily download official statistics",
   "homepage": "https://github.com/nbbrd/sdmx-dl",
   "license": "European Union Public Licence (EUPL)",
-  "url": "https://github.com/nbbrd/sdmx-dl/releases/download/v3.0.0-beta.11/sdmx-dl-cli-3.0.0-beta.11-bin.jar",
-  "hash": "sha256:152284cb46232b5a8b337238ef80630e285bc9d7493c09b43ec4a7f30ac878d4",
+  "url": "https://github.com/nbbrd/sdmx-dl/releases/download/v3.0.0-beta.12/sdmx-dl-cli-3.0.0-beta.12-bin.jar",
+  "hash": "sha256:391de5eef43933eebc72cc34c0be15bbb9210c7b914c46ebaf796a7e8b67d42e",
   "suggest": {
     "JDK": [
       "java/oraclejdk",
       "java/openjdk"
     ]
   },
-  "pre_install": "\"@java -jar \"\"$dir\\sdmx-dl-cli-3.0.0-beta.11-bin.jar\"\" %*\" | out-file -en oem \"$dir\\sdmx-dl.bat\"",
+  "pre_install": "\"@java -jar \"\"$dir\\sdmx-dl-cli-3.0.0-beta.12-bin.jar\"\" %*\" | out-file -en oem \"$dir\\sdmx-dl.bat\"",
   "bin": "sdmx-dl.bat",
   "checkver": {
     "url": "https://github.com/nbbrd/sdmx-dl/releases/latest",
