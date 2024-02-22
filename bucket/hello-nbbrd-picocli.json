@@ -1,17 +1,17 @@
 {
-  "version": "2.4.1",
+  "version": "2.4.2",
   "description": "Hello NBBRD",
   "homepage": "https://github.com/nbbrd/sandbox",
   "license": "European Union Public Licence (EUPL)",
-  "url": "https://github.com/nbbrd/sandbox/releases/download/v2.4.1/sandbox-picocli-2.4.1-bin.jar",
-  "hash": "sha256:59f6ecb54418e9d1a464c5a495e1cf1a63aaf836b0bdba5a61236c1f28664c0a",
+  "url": "https://github.com/nbbrd/sandbox/releases/download/v2.4.2/sandbox-picocli-2.4.2-bin.jar",
+  "hash": "sha256:4d48e7b00b66ceb96d187935c9fa525e987f2f55a75d9bbbaf00fc0d2c36139b",
   "suggest": {
     "JDK": [
       "java/oraclejdk",
       "java/openjdk"
     ]
   },
-  "pre_install": "\"@java -jar \"\"$dir\\sandbox-picocli-2.4.1-bin.jar\"\" %*\" | out-file -en oem \"$dir\\hello-nbbrd-picocli.bat\"",
+  "pre_install": "\"@java -jar \"\"$dir\\sandbox-picocli-2.4.2-bin.jar\"\" %*\" | out-file -en oem \"$dir\\hello-nbbrd-picocli.bat\"",
   "bin": "hello-nbbrd-picocli.bat",
   "checkver": {
     "url": "https://github.com/nbbrd/sandbox/releases/latest",
