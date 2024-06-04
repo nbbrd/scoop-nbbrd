@@ -1,0 +1,26 @@
+{
+  "version": "1.2.0",
+  "description": "NetBeans Platform Launcher",
+  "homepage": "https://github.com/nbbrd/beanzooka",
+  "license": "European Union Public Licence (EUPL)",
+  "url": "https://github.com/nbbrd/beanzooka/releases/download/v1.2.0/beanzooka-1.2.0-bin.jar",
+  "hash": "sha256:537ca96ad7ac41c5c05ca24c8a031dd5694cc3f04f614ff714aec72d35a39987",
+  "suggest": {
+    "JDK": [
+      "java/oraclejdk",
+      "java/openjdk"
+    ]
+  },
+  "pre_install": "\"@java -jar \"\"$dir\\beanzooka-1.2.0-bin.jar\"\" %*\" | out-file -en oem \"$dir\\beanzooka.bat\"",
+  "bin": "beanzooka.bat",
+  "checkver": {
+    "url": "https://github.com/nbbrd/beanzooka/releases/latest",
+    "re": "v([\\d.]+).jar"
+  },
+  "autoupdate": {
+    "url": "https://github.com/nbbrd/beanzooka/releases/download/v$version/beanzooka-$version-bin.jar",
+    "hash": {
+      "url": "$url.sha256"
+    }
+  }
+}
