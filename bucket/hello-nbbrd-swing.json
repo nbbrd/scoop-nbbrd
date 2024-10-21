@@ -1,17 +1,17 @@
 {
-  "version": "2.4.5",
+  "version": "2.5.0",
   "description": "Hello NBBRD",
   "homepage": "https://github.com/nbbrd/sandbox",
   "license": "European Union Public Licence (EUPL)",
-  "url": "https://github.com/nbbrd/sandbox/releases/download/v2.4.5/sandbox-swing-2.4.5-bin.jar",
-  "hash": "sha256:edb29b09406ddda176d0b8e50af892d9906264cd8c988d01a40a67b166bd6bfb",
+  "url": "https://github.com/nbbrd/sandbox/releases/download/v2.5.0/sandbox-swing-2.5.0-bin.jar",
+  "hash": "sha256:e7975e5dc924ef8dd9e2fb2f42f0237f221a081d2d750e1ebc8cbc07c191ba50",
   "suggest": {
     "JDK": [
       "java/oraclejdk",
       "java/openjdk"
     ]
   },
-  "pre_install": "\"@java -jar \"\"$dir\\sandbox-swing-2.4.5-bin.jar\"\" %*\" | out-file -en oem \"$dir\\hello-nbbrd-swing.bat\"",
+  "pre_install": "\"@java -jar \"\"$dir\\sandbox-swing-2.5.0-bin.jar\"\" %*\" | out-file -en oem \"$dir\\hello-nbbrd-swing.bat\"",
   "bin": "hello-nbbrd-swing.bat",
   "checkver": {
     "url": "https://github.com/nbbrd/sandbox/releases/latest",
