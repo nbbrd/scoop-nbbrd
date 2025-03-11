@@ -1,26 +1,26 @@
 {
-  "version": "1.3.0",
-  "description": "NetBeans Platform Launcher",
-  "homepage": "https://github.com/nbbrd/beanzooka",
-  "license": "European Union Public Licence (EUPL)",
-  "url": "https://github.com/nbbrd/beanzooka/releases/download/v1.3.0/beanzooka-1.3.0-bin.jar",
-  "hash": "sha256:058164918f5d3db10993891adee3f82b1a0ab040e7e65432dfec2dc5733fa474",
-  "suggest": {
-    "JDK": [
-      "java/oraclejdk",
-      "java/openjdk"
-    ]
-  },
-  "pre_install": "\"@java -jar \"\"$dir\\beanzooka-1.3.0-bin.jar\"\" %*\" | out-file -en oem \"$dir\\beanzooka.bat\"",
-  "bin": "beanzooka.bat",
-  "checkver": {
-    "url": "https://github.com/nbbrd/beanzooka/releases/latest",
-    "re": "v([\\d.]+).jar"
-  },
-  "autoupdate": {
-    "url": "https://github.com/nbbrd/beanzooka/releases/download/v$version/beanzooka-$version-bin.jar",
-    "hash": {
-      "url": "$url.sha256"
+    "version": "1.4.0",
+    "description": "NetBeans Platform Launcher",
+    "homepage": "https://github.com/nbbrd/beanzooka",
+    "license": "European Union Public Licence (EUPL)",
+    "url": "https://github.com/nbbrd/beanzooka/releases/download/v1.4.0/beanzooka-1.4.0-bin.jar",
+    "hash": "sha256:387176b0814fac8ee438248a3194c2f41e48ab2a5a7d8014e2ba3d3afd5390d7",
+    "suggest": {
+        "JDK": [
+            "java/oraclejdk",
+            "java/openjdk"
+        ]
+    },
+    "pre_install": "\"@java -jar \"\"$dir\\beanzooka-1.4.0-bin.jar\"\" %*\" | out-file -en oem \"$dir\\beanzooka.bat\"",
+    "bin": "beanzooka.bat",
+    "checkver": {
+        "url": "https://github.com/nbbrd/beanzooka/releases/latest",
+        "re": "v([\\d.]+).jar"
+    },
+    "autoupdate": {
+        "url": "https://github.com/nbbrd/beanzooka/releases/download/v$version/beanzooka-$version-bin.jar",
+        "hash": {
+            "url": "$url.sha256"
+        }
     }
-  }
 }
