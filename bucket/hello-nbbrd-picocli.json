@@ -1,26 +1,26 @@
 {
-  "version": "2.5.0",
-  "description": "Hello NBBRD",
-  "homepage": "https://github.com/nbbrd/sandbox",
-  "license": "European Union Public Licence (EUPL)",
-  "url": "https://github.com/nbbrd/sandbox/releases/download/v2.5.0/sandbox-picocli-2.5.0-bin.jar",
-  "hash": "sha256:661913dc91d345236fbe1ea7d18cd228e62916960493ec9d30cc65e687a7717f",
-  "suggest": {
-    "JDK": [
-      "java/oraclejdk",
-      "java/openjdk"
-    ]
-  },
-  "pre_install": "\"@java -jar \"\"$dir\\sandbox-picocli-2.5.0-bin.jar\"\" %*\" | out-file -en oem \"$dir\\hello-nbbrd-picocli.bat\"",
-  "bin": "hello-nbbrd-picocli.bat",
-  "checkver": {
-    "url": "https://github.com/nbbrd/sandbox/releases/latest",
-    "re": "v([\\d.]+).jar"
-  },
-  "autoupdate": {
-    "url": "https://github.com/nbbrd/sandbox/releases/download/v$version/sandbox-picocli-$version-bin.jar",
-    "hash": {
-      "url": "$url.sha256"
+    "version": "2.5.1",
+    "description": "Hello NBBRD",
+    "homepage": "https://github.com/nbbrd/sandbox",
+    "license": "European Union Public Licence (EUPL)",
+    "url": "https://github.com/nbbrd/sandbox/releases/download/v2.5.1/sandbox-picocli-2.5.1-bin.jar",
+    "hash": "sha256:8b705f2e5b3672b5badb1436d8394aed86cc32edbee54d8c18f4f9b7cbaa7f1d",
+    "suggest": {
+        "JDK": [
+            "java/oraclejdk",
+            "java/openjdk"
+        ]
+    },
+    "pre_install": "\"@java -jar \"\"$dir\\sandbox-picocli-2.5.1-bin.jar\"\" %*\" | out-file -en oem \"$dir\\hello-nbbrd-picocli.bat\"",
+    "bin": "hello-nbbrd-picocli.bat",
+    "checkver": {
+        "url": "https://github.com/nbbrd/sandbox/releases/latest",
+        "re": "v([\\d.]+).jar"
+    },
+    "autoupdate": {
+        "url": "https://github.com/nbbrd/sandbox/releases/download/v$version/sandbox-picocli-$version-bin.jar",
+        "hash": {
+            "url": "$url.sha256"
+        }
     }
-  }
 }
