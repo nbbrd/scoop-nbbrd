@@ -1,10 +1,10 @@
 {
-    "version": "2.5.2",
+    "version": "2.6.0",
     "description": "Hello NBBRD",
     "homepage": "https://github.com/nbbrd/sandbox",
     "license": "European Union Public Licence (EUPL)",
-    "url": "https://github.com/nbbrd/sandbox/releases/download/v2.5.2/sandbox-netbeans-standalone-2.5.2-windows-x86_64.zip",
-    "hash": "sha256:7675068e3561f6cd2bd246402be9c80e79873675618b899847c417e2a87d60da",
+    "url": "https://github.com/nbbrd/sandbox/releases/download/v2.6.0/sandbox-netbeans-standalone-2.6.0-windows-x86_64.zip",
+    "hash": "sha256:797f66bb10e9a6508e97675f47c21b7c998dee1483c3028b377d4cdbf59e1847",
     "extract_dir": "sandboxnetbeans",
     "env_add_path": "bin",
     "checkver": {
