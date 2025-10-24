@@ -1,26 +1,26 @@
 {
-  "version": "3.0.0-beta.14",
-  "description": "Easily download official statistics",
-  "homepage": "https://github.com/nbbrd/sdmx-dl",
-  "license": "European Union Public Licence (EUPL)",
-  "url": "https://github.com/nbbrd/sdmx-dl/releases/download/v3.0.0-beta.14/sdmx-dl-cli-3.0.0-beta.14-bin.jar",
-  "hash": "sha256:3142f8d78e2d4bbee222ca9d4efec9787456ec211154d0439bf3cd9f22a1a45b",
-  "suggest": {
-    "JDK": [
-      "java/oraclejdk",
-      "java/openjdk"
-    ]
-  },
-  "pre_install": "\"@java -jar \"\"$dir\\sdmx-dl-cli-3.0.0-beta.14-bin.jar\"\" %*\" | out-file -en oem \"$dir\\sdmx-dl.bat\"",
-  "bin": "sdmx-dl.bat",
-  "checkver": {
-    "url": "https://github.com/nbbrd/sdmx-dl/releases/latest",
-    "re": "v([\\d.]+).jar"
-  },
-  "autoupdate": {
-    "url": "https://github.com/nbbrd/sdmx-dl/releases/download/v$version/sdmx-dl-cli-$version-bin.jar",
-    "hash": {
-      "url": "$url.sha256"
+    "version": "3.0.0-beta.15",
+    "description": "Easily download official statistics",
+    "homepage": "https://github.com/nbbrd/sdmx-dl",
+    "license": "European Union Public Licence (EUPL)",
+    "url": "https://github.com/nbbrd/sdmx-dl/releases/download/v3.0.0-beta.15/sdmx-dl-cli-3.0.0-beta.15-bin.jar",
+    "hash": "sha256:d656febd655ddf6abb247c9ce5bf517d938181dc7eff2b272d748b8b2b548efa",
+    "suggest": {
+        "JDK": [
+            "java/oraclejdk",
+            "java/openjdk"
+        ]
+    },
+    "pre_install": "\"@java -jar \"\"$dir\\sdmx-dl-cli-3.0.0-beta.15-bin.jar\"\" %*\" | out-file -en oem \"$dir\\sdmx-dl.bat\"",
+    "bin": "sdmx-dl.bat",
+    "checkver": {
+        "url": "https://github.com/nbbrd/sdmx-dl/releases/latest",
+        "re": "v([\\d.]+).jar"
+    },
+    "autoupdate": {
+        "url": "https://github.com/nbbrd/sdmx-dl/releases/download/v$version/sdmx-dl-cli-$version-bin.jar",
+        "hash": {
+            "url": "$url.sha256"
+        }
     }
-  }
 }
