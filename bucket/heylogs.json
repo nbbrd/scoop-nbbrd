@@ -1,17 +1,17 @@
 {
-    "version": "0.14.1",
+    "version": "0.15.0",
     "description": "Keep-a-changelog tool",
     "homepage": "https://github.com/nbbrd/heylogs",
     "license": "European Union Public Licence (EUPL)",
-    "url": "https://github.com/nbbrd/heylogs/releases/download/v0.14.1/heylogs-cli-0.14.1-bin.jar",
-    "hash": "sha256:e4fca4b242ffcfac956f35783cf500310b8fac5d8ef2c2457ac77c0f65a6f72b",
+    "url": "https://github.com/nbbrd/heylogs/releases/download/v0.15.0/heylogs-cli-0.15.0-bin.jar",
+    "hash": "sha256:2853531327d3950657689d523326f05a6c0a6c95deca7005916dbc3ffce09573",
     "suggest": {
         "JDK": [
             "java/oraclejdk",
             "java/openjdk"
         ]
     },
-    "pre_install": "\"@java -jar \"\"$dir\\heylogs-cli-0.14.1-bin.jar\"\" %*\" | out-file -en oem \"$dir\\heylogs.bat\"",
+    "pre_install": "\"@java -jar \"\"$dir\\heylogs-cli-0.15.0-bin.jar\"\" %*\" | out-file -en oem \"$dir\\heylogs.bat\"",
     "bin": "heylogs.bat",
     "checkver": {
         "url": "https://github.com/nbbrd/heylogs/releases/latest",
